@@ -7,13 +7,13 @@ struct ReservationForm: View {
             TextField("Type Your Name",
                 text:$customerName,
                 onEditingChanged: { status in
-                    print(status)
+                    print("onEditingChanged",status)
                 })
             .onSubmit({
                 print("submitted")
             })
             .onChange(of: customerName, perform: { newValue in
-                print(newValue)
+                print("newValue",newValue)
             })
 
         }
