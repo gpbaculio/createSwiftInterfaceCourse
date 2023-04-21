@@ -7,10 +7,10 @@ struct ParentView: View {
                 .fill(Color.yellow)
                 .frame(width: 50, height: 150)
    
-            Text("Rectangle One")
+            Text("Rectangle 1")
                 .foregroundColor(.white)
                 .padding(30)
-                .background(Color.yellow)
+                .background(Color.yellow).fixedSize()
                
             Rectangle()
                 .fill(Color.red)
